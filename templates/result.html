@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generated Results</title>
+  </head>
+  <body>
+    <h1>Generated Results</h1>
+    <h3>Original Depth Map:</h3>
+    <img src="data:image/png;base64,{{ depth_map }}" alt="Depth Map" />
+    {% if stereogram %}
+    <h3>Animated Stereogram:</h3>
+    <img
+      src="data:image/gif;base64,{{ stereogram }}"
+      alt="Animated Stereogram"
+    />
+    {% endif %}
+    <a href="/">Generate Another</a>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+  </head>
+  <body>
+    <h1>Generated Depth Map and Autostereogram</h1>
+
+    <h2>Depth Map:</h2>
+    <img src="data:image/png;base64,{{ depth_map }}" alt="Depth Map" />
+
+    <h2>Autostereogram:</h2>
+    <img
+      src="data:image/png;base64,{{ autostereogram }}"
+      alt="Autostereogram"
+    />
+
+    <a href="/">Generate Another</a>
+  </body>
+</html>
