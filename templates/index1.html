@@ -1,34 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magic Eye Stereogram Generator</title>
-  </head>
-  <body>
-    <h1>Magic Eye Stereogram Generator</h1>
-    <form method="POST" enctype="multipart/form-data">
-      <label for="depth_map">Upload Depth Map (Required):</label><br />
-      <input
-        type="file"
-        id="depth_map"
-        name="depth_map"
-        accept="image/*"
-      /><br /><br />
-
-      <label for="texture">Upload Texture (Optional):</label><br />
-      <input
-        type="file"
-        id="texture"
-        name="texture"
-        accept="image/*"
-      /><br /><br />
-
-      <button type="submit">Generate Stereogram</button>
-    </form>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,7 +8,9 @@
   <body>
     <h1>Magic Eye Animated Stereogram Generator</h1>
     <form method="POST" enctype="multipart/form-data">
-      <label for="depth_map">Upload Depth Map (Required):</label><br />
+      <label for="depth_map"
+        >Upload Image to generate depth map for (Required):</label
+      ><br />
       <input
         type="file"
         id="depth_map"
